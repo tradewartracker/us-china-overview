@@ -193,10 +193,13 @@ def make_bar_chart():
     p.min_height = int(0.25*height)
     p.min_width = int(0.25*width)
     
-    div0 = Div(text = """Offical Text from the <b>ECONOMIC AND TRADE AGREEMENT<b>""", width=555, background = background )
+    div0 = Div(text = """Offical Text from the <b>ECONOMIC AND TRADE AGREEMENT<b>""", width=555, background = background,
+               style={"justify-content": "space-between", "display": "flex"} )
     div0.sizing_mode= "scale_both"
     
-    div1 = Div(text="""<b>Chapter 6 (page 6-1), Article 6.2: Trade Opportunities.<b>""", width=555, background = background )
+    div1 = Div(text="""<b>Chapter 6 (page 6-1), Article 6.2: Trade Opportunities.<b>""", width=555, background = background,
+               style={"justify-content": "space-between", "display": "flex"} )
+    
     div1.sizing_mode= "scale_both"
     
     if level_select.value == 'All Phase One Products':
@@ -206,9 +209,10 @@ def make_bar_chart():
         agricultural goods, energy products, ... exceed the corresponding
         2017 baseline amount by no less than $200 billion ($64 billion in calandar year 2020);""",
                    width=555,
-                   background = background,)
+                   background = background,
+                   style={"justify-content": "space-between", "display": "flex"} )
         
-        div2.sizing_mode= "scale_both"
+        #div2.sizing_mode= "scale_both"
     
     if level_select.value == 'Manufactures':
         
@@ -216,8 +220,9 @@ def make_bar_chart():
             billion above the corresponding 2017 baseline amount is purchased and imported
             into China from the United States in calendar year 2020, and no less than $44.8
             billion above the corresponding 2017 baseline amount is purchased and imported
-            into China from the United States in calendar year 2021;""", width=555, background = background )
-        div2.sizing_mode= "scale_both"
+            into China from the United States in calendar year 2021;""", width=555, background = background,
+                   style={"justify-content": "space-between", "display": "flex"} )
+        #div2.sizing_mode= "scale_both"
         
     if level_select.value  == 'Energy':
         
@@ -225,8 +230,9 @@ def make_bar_chart():
         billion above the corresponding 2017 baseline amount is purchased and imported into China 
         from the United States in calendar year 2020, and no less than $33.9
         billion above the corresponding 2017 baseline amount is purchased and imported
-        into China from the United States in calendar year 2021;""", width=555, background = background )
-        div2.sizing_mode= "scale_both" 
+        into China from the United States in calendar year 2021;""", width=555, background = background,
+                   style={"justify-content": "space-between", "display": "flex"} )
+        #div2.sizing_mode= "scale_both" 
         
     if level_select.value  == 'Agriculture':
         
@@ -234,8 +240,9 @@ def make_bar_chart():
         billion above the corresponding 2017 baseline amount is purchased and imported
         into China from the United States in calendar year 2020, and no less than $19.5
         billion above the corresponding 2017 baseline amount is purchased and imported
-        into China from the United States in calendar year 2021;""", width=555, background = background )
-        div2.sizing_mode= "scale_both" 
+        into China from the United States in calendar year 2021;""", width=555, background = background,
+                   style={"justify-content": "space-between", "display": "flex"} )
+        #div2.sizing_mode= "scale_both" 
         
         
     p = column(p,div0,div1,div2,sizing_mode="scale_both", max_height = height, max_width = width,
