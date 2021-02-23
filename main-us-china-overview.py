@@ -4,7 +4,6 @@ from os.path import dirname, join
 import numpy as np
 
 import pandas as pd
-from scipy.signal import savgol_filter
 
 import pyarrow as pa
 import pyarrow.parquet as pq
