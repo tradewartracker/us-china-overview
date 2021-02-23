@@ -163,13 +163,13 @@ def make_bar_chart():
 
 
     p.y_range.end = 200000000000
-    mytext = Label(x=495, y=350, text='''China's progress towards''', text_font_size="1.2em", text_font_style = "bold",
+    mytext = Label(x=605, y=370, text='''China's progress towards''', text_font_size="1.2em", text_font_style = "bold",
                       x_units='screen', y_units='screen')
     p.add_layout(mytext)
-    mytext = Label(x=495, y=330, text='meeting commitments:', text_font_size="1.2em", text_font_style = "bold",
+    mytext = Label(x=605, y=350, text='meeting commitments:', text_font_size="1.2em", text_font_style = "bold",
                       x_units='screen', y_units='screen')
     p.add_layout(mytext)
-    mytext = Label(x=495, y=280, text= goal_met + '%', text_font_size="3em", text_font_style = "bold",
+    mytext = Label(x=605, y=300, text= goal_met + '%', text_font_size="3em", text_font_style = "bold",
                       x_units='screen', y_units='screen')
     p.add_layout(mytext)
 
