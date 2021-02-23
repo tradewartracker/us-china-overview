@@ -20,8 +20,8 @@ from bokeh.transform import factor_cmap
 
 #################################################################################
 
-width = 825
-height = 570
+height = int(1.15*533)
+width = int(1.15*750)
 
 start_date = "2013-01-01"
 end_date = "2020-12-01"
@@ -30,13 +30,13 @@ crl = ["darkblue","slategray","crimson"]
 
 background = "#ffffff"
 
-file = ".\\data"+ "\\goals.parquet"
+file = "./data"+ "/goals.parquet"
 
 df = pq.read_table(file).to_pandas()
 
 level = "All Phase One Products"
 
-file = ".\\data"+ "\\phaseone-tradedata-C-december.parquet"
+file = "./data"+ "/phaseone-tradedata-C-december.parquet"
 
 timedf = pq.read_table(file).to_pandas()
 #################################################################################
