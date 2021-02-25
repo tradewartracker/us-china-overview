@@ -24,7 +24,7 @@ height = int(1.15*533)
 width = int(1.15*750)
 
 start_date = "2013-01-01"
-end_date = "2020-12-01"
+end_date = "2021-01-01"
 
 crl = ["darkblue","slategray","crimson"]
 
@@ -36,7 +36,7 @@ df = pq.read_table(file).to_pandas()
 
 level = "All Phase One Products"
 
-file = "./data"+ "/phaseone-tradedata-C-december.parquet"
+file = "./data"+ "/phaseone-tradedata-C-january.parquet"
 
 timedf = pq.read_table(file).to_pandas()
 #################################################################################
@@ -457,7 +457,7 @@ def update_plot(attrname, old, new):
 # so it updates the layout and [0] is the first option (see below there is a row with the
 # first entry the plot, then the controls)
 
-chart_select = Select(value='Overview 2020', title='Chart Type', options=['Overview 2021', 'Overview 2020', 'US Exports by Time', "Cumulative Purchases"], width=300)
+chart_select = Select(value='Overview 2021', title='Chart Type', options=['Overview 2021', 'Overview 2020', 'US Exports by Time', "Cumulative Purchases"], width=300)
 # This is the key thing that creates teh selection object
 
 chart_select.on_change('value', update_plot)
