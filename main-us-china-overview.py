@@ -24,7 +24,7 @@ height = int(1.15*533)
 width = int(1.15*750)
 
 start_date = "2013-01-01"
-end_date = "2021-01-01"
+end_date = "2021-02-01"
 
 crl = ["darkblue","slategray","crimson"]
 
@@ -36,7 +36,7 @@ df = pq.read_table(file).to_pandas()
 
 level = "All Phase One Products"
 
-file = "./data"+ "/phaseone-tradedata-C-january.parquet"
+file = "./data"+ "/phaseone-tradedata-C-febuary.parquet"
 
 timedf = pq.read_table(file).to_pandas()
 #################################################################################
@@ -360,7 +360,7 @@ def make_time_by_product():
     foobar = make_trade_time(timedf,level_select.value)
     
     start_range = dt.datetime(2017,7,1)
-    end_range = dt.datetime(2021,3,1)
+    end_range = dt.datetime(2021,6,1)
         
     numlines=len(foobar.columns)
     
