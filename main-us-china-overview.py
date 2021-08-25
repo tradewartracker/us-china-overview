@@ -24,7 +24,9 @@ height = int(1.15*533)
 width = int(1.15*750)
 
 start_date = "2013-01-01"
-end_date = "2021-10-01"
+end_date = "2021-07-01"
+
+end_range = dt.datetime(2021,10,1)
 
 crl = ["darkblue","slategray","crimson"]
 
@@ -360,7 +362,7 @@ def make_time_by_product():
     foobar = make_trade_time(timedf,level_select.value)
     
     start_range = dt.datetime(2017,7,1)
-    end_range = dt.datetime(2021,8,1)
+    #end_range = dt.datetime(2021,8,1)
         
     numlines=len(foobar.columns)
     
