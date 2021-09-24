@@ -26,7 +26,7 @@ width = int(1.15*750)
 start_date = "2013-01-01"
 end_date = "2021-07-01"
 
-end_range = dt.datetime(2021,10,1)
+end_range = dt.datetime(2021,12,1)
 
 crl = ["darkblue","slategray","crimson"]
 
@@ -38,7 +38,7 @@ df = pq.read_table(file).to_pandas()
 
 level = "All Phase One Products"
 
-file = "./data"+ "/phaseone-tradedata-C-july.parquet"
+file = "./data"+ "/phaseone-tradedata-C-august21.parquet"
 
 timedf = pq.read_table(file).to_pandas()
 #################################################################################
