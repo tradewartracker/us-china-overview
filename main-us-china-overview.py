@@ -24,7 +24,7 @@ height = int(1.15*533)
 width = int(1.15*750)
 
 start_date = "2013-01-01"
-end_date = "2021-09-01"
+end_date = "2021-10-01"
 
 end_range = dt.datetime(2022,2,1)
 
